@@ -26,5 +26,10 @@ namespace Iskhakov_41
             MainFrame.Navigate(new ProductPage());
             Manager.MainFrame = MainFrame;
         }
+
+        private void MainFrame_ContentRendered(object sender, EventArgs e)
+        {
+
+        }
     }
 }

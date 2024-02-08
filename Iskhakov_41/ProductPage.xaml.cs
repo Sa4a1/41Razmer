@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Iskhakov_41
 {
     /// <summary>
@@ -23,6 +24,8 @@ namespace Iskhakov_41
         public ProductPage()
         {
             InitializeComponent();
+            var currentProduct = Iskhakov_41Entities.GetContext().Product.ToList();
+            ProductListView.ItemsSource = currentProduct;
         }
     }
 }

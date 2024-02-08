@@ -12,7 +12,34 @@
         <ListView Name="ProductListView">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Stretch="UniformToFill" Grid.Column="0" Grid.RowSpan="4" HorizontalAlignment="Center" Width="200">
+                            <Image.Source>
+                                <Binding Path="Photo">
+                                    <Binding.TargetNullValue>
+                                        Images\picture.png
+                                    </Binding.TargetNullValue>
+                                </Binding>
+                            </Image.Source>
+                        </Image>
+                        <StackPanel Grid.RowSpan="4" Grid.Column="1">
+                            <TextBlock Text="{Binding ProductName}" FontSize="20" FontWeight="Bold" Grid.Row="0" Grid.Column="1"/>
+                            <TextBlock Text="{Binding ProductDescription}" FontSize="20" Grid.Row="1" Grid.Column="1"/>
+                            <TextBlock Text="{Binding ProductManufacturer}" FontSize="20" Grid.Row="2" Grid.Column="1"/>
+                        </StackPanel>
+                        <TextBlock Text="{Binding ProductDiscountAmount, StringFormat={}{0:0} %}" Grid.RowSpan="4" Grid.Column="2" FontSize="50" HorizontalAlignment="Right"/>
+                    </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

@@ -174,7 +174,6 @@
   <ItemGroup>
     <Resource Include="Images\icon.ico" />
     <Resource Include="Images\logo.png" />
-    <Resource Include="Images\picture.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -189,6 +188,17 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Images\H782T5.jpg" />
+    <Resource Include="Images\J384T6.jpg" />
+    <Resource Include="Images\А112Т4.jpg" />
+    <Resource Include="Images\B320R5.jpg" />
+    <Resource Include="Images\D329H3.jpg" />
+    <Resource Include="Images\D572U8.jpg" />
+    <Resource Include="Images\F572H7.jpg" />
+    <Resource Include="Images\F635R4.jpg" />
+    <Resource Include="Images\G432E4.jpg" />
+    <Resource Include="Images\G783F5.jpg" />
+    <Resource Include="Images\picture.png" />
     <Content Include="Iskhakov_41.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Iskhakov_41.Context.cs</LastGenOutput>
